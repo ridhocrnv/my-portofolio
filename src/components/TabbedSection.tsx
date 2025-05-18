@@ -189,7 +189,7 @@ const TechStackTab = () => {
 const TabbedSection = () => {
   const [activeTab, setActiveTab] = useState('projects');
   const sectionRef = useRef<HTMLElement>(null);
-
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -213,38 +213,32 @@ const TabbedSection = () => {
 
   return (
     <section 
-      id="projects"
+      id="projects" 
       ref={sectionRef}
       className="py-20 bg-dark"
     >
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center opacity-0 animate-on-scroll">
-          My <span className="text-gradient">Work</span>
+          My <span className="text-gradient">Portfolio</span>
         </h2>
 
-        <div className="flex justify-center mb-10 opacity-0 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
-          <div className="glass-card inline-flex p-1 rounded-full">
+        <div className="glass-card p-1 md:p-2 rounded-lg mb-8 opacity-0 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
+          <div className="flex">
             <button
+              className={`py-3 px-6 rounded-lg transition-all ${activeTab === 'projects' ? 'bg-dark-secondary text-gradient' : 'text-gray-400 hover:text-white'}`}
               onClick={() => setActiveTab('projects')}
-              className={`px-6 py-2 rounded-full transition-colors ${
-                activeTab === 'projects' ? 'bg-gradient-primary text-white' : 'text-gray-400 hover:text-white'
-              }`}
             >
               Projects
             </button>
             <button
+              className={`py-3 px-6 rounded-lg transition-all ${activeTab === 'certificates' ? 'bg-dark-secondary text-gradient' : 'text-gray-400 hover:text-white'}`}
               onClick={() => setActiveTab('certificates')}
-              className={`px-6 py-2 rounded-full transition-colors ${
-                activeTab === 'certificates' ? 'bg-gradient-primary text-white' : 'text-gray-400 hover:text-white'
-              }`}
             >
               Certificates
             </button>
             <button
+              className={`py-3 px-6 rounded-lg transition-all ${activeTab === 'techstack' ? 'bg-dark-secondary text-gradient' : 'text-gray-400 hover:text-white'}`}
               onClick={() => setActiveTab('techstack')}
-              className={`px-6 py-2 rounded-full transition-colors ${
-                activeTab === 'techstack' ? 'bg-gradient-primary text-white' : 'text-gray-400 hover:text-white'
-              }`}
             >
               Tech Stack
             </button>

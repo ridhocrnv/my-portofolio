@@ -25,7 +25,15 @@ const Header = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       setMobileMenuOpen(false);
-      section.scrollIntoView({ behavior: 'smooth' });
+      // Improved scroll with offset for header height
+      const headerOffset = 80;
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 

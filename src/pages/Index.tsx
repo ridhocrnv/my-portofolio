@@ -10,6 +10,21 @@ import ScrollToTop from '../components/ScrollToTop';
 
 const Index = () => {
   useEffect(() => {
+    // Ensure all sections have IDs that match the navigation
+    const sections = [
+      { id: 'home', element: document.querySelector('#home') },
+      { id: 'about', element: document.querySelector('#about') },
+      { id: 'projects', element: document.querySelector('#projects') },
+      { id: 'contact', element: document.querySelector('#contact') }
+    ];
+    
+    // Check if all sections are properly accessible
+    sections.forEach(section => {
+      if (!section.element) {
+        console.warn(`Section with id "${section.id}" not found in the DOM`);
+      }
+    });
+
     // Add AOS-like functionality with CSS animations and Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
