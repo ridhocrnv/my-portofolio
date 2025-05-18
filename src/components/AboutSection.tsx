@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Html, Css, Javascript, Git, Github, Figma } from 'lucide-react';
+import { FileCode, FileType, Code, GitBranch, Github, Figma } from 'lucide-react';
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -27,10 +27,10 @@ const AboutSection = () => {
   }, []);
 
   const skills = [
-    { name: "HTML", icon: Html, color: "#E44D26" },
-    { name: "CSS", icon: Css, color: "#1572B6" },
-    { name: "JavaScript", icon: Javascript, color: "#F7DF1E" },
-    { name: "Git", icon: Git, color: "#F05032" },
+    { name: "HTML", icon: FileCode, color: "#E44D26" },
+    { name: "CSS", icon: FileType, color: "#1572B6" },
+    { name: "JavaScript", icon: Code, color: "#F7DF1E" },
+    { name: "Git", icon: GitBranch, color: "#F05032" },
     { name: "GitHub", icon: Github, color: "#181717" },
     { name: "Figma", icon: Figma, color: "#F24E1E" },
   ];

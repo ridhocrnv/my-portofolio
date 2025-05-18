@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect, useRef } from 'react';
-import { ExternalLink, Github, Html, Css, Javascript, Git, Figma } from 'lucide-react';
+import { ExternalLink, Github, FileCode, FileType, Code, GitBranch, Figma } from 'lucide-react';
 
 const TabContent = ({ activeTab }: { activeTab: string }) => {
   if (activeTab === 'projects') {
@@ -157,10 +156,10 @@ const CertificatesTab = () => {
 
 const TechStackTab = () => {
   const technologies = [
-    { name: "HTML5", icon: Html, color: "#E44D26", level: 85 },
-    { name: "CSS3", icon: Css, color: "#1572B6", level: 80 },
-    { name: "JavaScript", icon: Javascript, color: "#F7DF1E", level: 70 },
-    { name: "Git", icon: Git, color: "#F05032", level: 75 },
+    { name: "HTML5", icon: FileCode, color: "#E44D26", level: 85 },
+    { name: "CSS3", icon: FileType, color: "#1572B6", level: 80 },
+    { name: "JavaScript", icon: Code, color: "#F7DF1E", level: 70 },
+    { name: "Git", icon: GitBranch, color: "#F05032", level: 75 },
     { name: "GitHub", icon: Github, color: "#181717", level: 80 },
     { name: "Figma", icon: Figma, color: "#F24E1E", level: 65 }
   ];
