@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Settings } from 'lucide-react';
 
 const TypewriterText = ({ texts }: { texts: string[] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,6 +40,29 @@ const TypewriterText = ({ texts }: { texts: string[] }) => {
   );
 };
 
+// Animated Gear Component
+const AnimatedGear = ({ size, position, delay, rotate }: { 
+  size: number, 
+  position: string, 
+  delay: string, 
+  rotate: string 
+}) => {
+  return (
+    <div 
+      className={`absolute ${position} animate-spin`} 
+      style={{ 
+        width: `${size}px`, 
+        height: `${size}px`,
+        animationDuration: '20s', 
+        animationDelay: delay,
+        animationDirection: rotate
+      }}
+    >
+      <Settings size={size} className="text-gradient-start/30" />
+    </div>
+  );
+};
+
 const HeroSection = () => {
   const scrollToProjects = () => {
     const section = document.getElementById('projects');
@@ -69,9 +92,15 @@ const HeroSection = () => {
         <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-gradient-end/20 rounded-full filter blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
       </div>
 
+      {/* Animated Gears 
+      <AnimatedGear size={80} position="top-20 left-[10%]" delay="0s" rotate="normal" />
+      <AnimatedGear size={120} position="bottom-40 right-[15%]" delay="2s" rotate="reverse" />
+      <AnimatedGear size={60} position="top-1/3 right-[20%]" delay="1s" rotate="normal" />
+      */}
+
       <div className="container-custom z-10 flex flex-col items-center text-center">
         <h2 className="text-gray-400 mb-2 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          Welcome to my portfolio website
+          Welcome to my portfolio website 👋
         </h2>
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
           I'm <span className="text-gradient">Ridho Ahmad Irawan</span>
@@ -89,6 +118,7 @@ const HeroSection = () => {
         </button>
       </div>
 
+      
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-fade-in" style={{ animationDelay: '1.5s' }}>
         <span className="text-sm text-gray-400 mb-2">Scroll Down</span>

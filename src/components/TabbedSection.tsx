@@ -19,7 +19,7 @@ const ProjectsTab = () => {
       id: 1,
       title: "Bookshelf App",
       description: "A CRUD application for managing your book collection with search and filter functionalities.",
-      image: "https://source.unsplash.com/random/600x400/?book",
+      image: "belajar-pemrograman-web-dasar.webp",
       technologies: ["HTML", "CSS", "JavaScript"],
       liveLink: "#",
       githubLink: "#"
@@ -28,7 +28,7 @@ const ProjectsTab = () => {
       id: 2,
       title: "Ramadan Challenge",
       description: "Prayer schedule and daily inspirational quotes app for Ramadan with reminders.",
-      image: "https://source.unsplash.com/random/600x400/?mosque",
+      image: "belajar-pemrograman-web-dasar.webp",
       technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
       liveLink: "#",
       githubLink: "#"
@@ -37,7 +37,7 @@ const ProjectsTab = () => {
       id: 3,
       title: "To-Do List App",
       description: "Modern UI to-do list application with user authentication and data persistence.",
-      image: "https://source.unsplash.com/random/600x400/?checklist",
+      image: "belajar-pemrograman-web-dasar.webp",
       technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
       liveLink: "#",
       githubLink: "#"
@@ -98,26 +98,34 @@ const CertificatesTab = () => {
   const certificates = [
     {
       id: 1,
-      title: "Frontend Web Development Basics",
-      issuer: "Dicoding Academy",
-      date: "January 2024",
-      image: "https://source.unsplash.com/random/800x600/?certificate",
+      title: "Belajar Dasar Pemrograman Web",
+      issuer: "Dicoding Indonesia",
+      date: "November 2024",
+      image: "/belajar-pemrograman-web-dasar.webp",
       link: "#"
     },
     {
       id: 2,
-      title: "Responsive Web Design",
-      issuer: "FreeCodeCamp",
-      date: "March 2024",
-      image: "https://source.unsplash.com/random/800x600/?diploma",
+      title: "Belajar Dasar Pemrograman JavaScript",
+      issuer: "Dicoding Indonesia",
+      date: "Desember 2024",
+      image: "belajar-dasar-pemrograman-javascript.webp",
       link: "#"
     },
     {
       id: 3,
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "FreeCodeCamp",
-      date: "April 2024",
-      image: "https://source.unsplash.com/random/800x600/?award",
+      title: "Belajar Membuat Front-End Web untuk Pemula",
+      issuer: "Dicoding Indonesia",
+      date: "Mei 2025",
+      image: "belajar-membuat-front-end-web-pemula.webp",
+      link: "#"
+    },
+    {
+      id: 4,
+      title: "Belajar Dasar Cloud dan Gen AI di AWS",
+      issuer: "Dicoding Indonesia",
+      date: "Mei 2025",
+      image: "belajar-dasar-cloud-dan-gen-ai.webp",
       link: "#"
     }
   ];

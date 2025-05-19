@@ -17,7 +17,7 @@ const Footer = () => {
               <span className="text-xl font-bold heading-gradient">Ridho</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Beginner frontend developer focused on creating beautiful and functional web experiences.
+              Beginner Frontend Developer yang berfokus pada menciptakan pengalaman web yang menarik dan fungsional.
             </p>
             <div className="flex gap-4">
               <a 

@@ -59,16 +59,13 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="opacity-0 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
             <div className="glass-card p-6 h-full">
-              <h3 className="text-xl font-semibold mb-4 text-gradient">Who I Am</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gradient">Siapa di Balik Layar</h3>
               <p className="text-gray-300 mb-4">
-                I'm Ridho Ahmad Irawan, a Beginner Frontend Developer from Halu Oleo University, 
-                Computer Science Study Program. With more than a year of experience in the frontend world, 
-                I focus on developing aesthetic, interactive, and user-friendly web interfaces.
+                Halo! Saya <strong>Ridho Ahmad Irawan</strong>, seorang <strong>Beginner Frontend Developer</strong> yang saat ini sedang menempuh studi di <strong>Universitas Halu Oleo</strong>, Program Studi <strong>Ilmu Komputer</strong>. Selama lebih dari satu tahun terakhir, saya aktif belajar dan mengembangkan berbagai antarmuka web yang menarik, interaktif, dan mudah digunakan.
               </p>
               <p className="text-gray-300">
-                I created this portfolio as a reflection of my learning journey, with a dark-themed 
-                modern look, dynamic gradation accents, and a touch of animation and visual effects 
-                for a pleasant user experience. Welcome to my digital space!
+                Portofolio ini saya buat sebagai bagian dari perjalanan belajar dan eksplorasi saya di dunia frontend. Dengan nuansa gelap, aksen gradasi dinamis, serta sentuhan animasi dan efek visual, saya ingin menyuguhkan pengalaman pengguna yang menyenangkan dan modern.
+Silakan scroll-scroll dulu, siapa tahu ada yang menarik 😄.
               </p>
             </div>
           </div>

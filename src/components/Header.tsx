@@ -45,7 +45,7 @@ const Header = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <div className="relative w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center">
+          <div className="relative w-8 h-8 bg-gradient-primary flex items-center justify-center">
             <span className="text-xl font-bold text-white">R</span>
           </div>
           <span className="text-xl font-bold heading-gradient">Ridho</span>
