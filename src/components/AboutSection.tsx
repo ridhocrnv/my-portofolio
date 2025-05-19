@@ -28,13 +28,53 @@ const AboutSection = () => {
   }, []);
 
   const skills = [
-    { name: "HTML", icon: FileCode, color: "#E44D26" },
-    { name: "CSS", icon: FileType, color: "#1572B6" },
-    { name: "JavaScript", icon: Code, color: "#F7DF1E" },
-    { name: "Git", icon: GitBranch, color: "#F05032" },
-    { name: "GitHub", icon: Github, color: "#181717" },
-    { name: "Figma", icon: Figma, color: "#F24E1E" },
-  ];
+  {
+    name: "HTML",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    color: "#E34F26",
+  },
+  {
+    name: "CSS",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    color: "#1572B6",
+  },
+  {
+    name: "JavaScript",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    color: "#F7DF1E",
+  },
+  {
+    name: "TypeScript",
+    iconUrl: "typescript.png",
+    color: "#3178C6",
+  },
+  {
+    name: "Python",
+    iconUrl: "python.png",
+    color: "#3776AB",
+  },
+  {
+    name: "C++",
+    iconUrl: "c-.png",
+    color: "#3776AB",
+  },
+  {
+    name: "Git",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    color: "#F05032",
+  },
+  {
+    name: "GitHub",
+    iconUrl: "https://img.icons8.com/ios-glyphs/100/FFFFFF/github.png",
+    color: "#181717",
+  },
+  {
+    name: "Figma",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    color: "#F24E1E",
+  },
+];
+
 
   const softSkills = [
     "Communication",
@@ -65,7 +105,7 @@ const AboutSection = () => {
               </p>
               <p className="text-gray-300">
                 Portofolio ini saya buat sebagai bagian dari perjalanan belajar dan eksplorasi saya di dunia frontend. Dengan nuansa gelap, aksen gradasi dinamis, serta sentuhan animasi dan efek visual, saya ingin menyuguhkan pengalaman pengguna yang menyenangkan dan modern.
-Silakan scroll-scroll dulu, siapa tahu ada yang menarik 😄.
+<strong> Silakan scroll-scroll dulu, siapa tahu ada yang menarik 😄</strong>.
               </p>
             </div>
           </div>
@@ -75,14 +115,19 @@ Silakan scroll-scroll dulu, siapa tahu ada yang menarik 😄.
               <h3 className="text-xl font-semibold mb-4 text-gradient">Technical Skills</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {skills.map((skill) => (
-                  <div 
-                    key={skill.name} 
-                    className="flex flex-col items-center p-3 rounded-lg bg-dark/50 hover:scale-105 transition-transform"
-                  >
-                    <skill.icon size={28} style={{ color: skill.color }} className="mb-2" />
-                    <span className="text-sm text-gray-300">{skill.name}</span>
-                  </div>
-                ))}
+  <div
+    key={skill.name}
+    className="flex flex-col items-center p-3 rounded-lg bg-dark/50 hover:scale-105 transition-transform"
+  >
+    <img
+      src={skill.iconUrl}
+      alt={skill.name}
+      className="mb-2"
+      style={{ width: 28, height: 28, filter: `drop-shadow(0 0 2px ${skill.color})` }}
+    />
+    <span className="text-sm text-gray-300">{skill.name}</span>
+  </div>
+))}
               </div>
             </div>
 

@@ -17,30 +17,30 @@ const ProjectsTab = () => {
   const projects = [
     {
       id: 1,
-      title: "Bookshelf App",
-      description: "A CRUD application for managing your book collection with search and filter functionalities.",
-      image: "belajar-pemrograman-web-dasar.webp",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "#",
-      githubLink: "#"
+      title: "UHO CS 2024 — Website Angkatan",
+      description: "Website Angkatan Ilmu Komputer 2024 Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Halu Oleo",
+      image: "uho-cs-2024.webp",
+      technologies: ["TypeScript", "Vite", "React", "Shadcn UI", "Tailwind CSS",],
+      liveLink: "https://ilkom24uho.vercel.app",
+      githubLink: "https://github.com/ridhocrnv/uho-cs-2024"
     },
     {
       id: 2,
-      title: "Ramadan Challenge",
-      description: "Prayer schedule and daily inspirational quotes app for Ramadan with reminders.",
-      image: "belajar-pemrograman-web-dasar.webp",
-      technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
-      liveLink: "#",
-      githubLink: "#"
+      title: "Website Portofolio",
+      description: "Website portofolio pribadi yang menampilkan profil, keahlian, dan proyek saya sebagai Frontend Developer.",
+      image: "my-portofolio.webp",
+      technologies: ["TypeScript", "Vite", "React", "Shadcn UI", "Tailwind CSS",],
+      liveLink: "https://ilkom24uho.vercel.app",
+      githubLink: "https://github.com/ridhocrnv/my-portofolio"
     },
     {
       id: 3,
-      title: "To-Do List App",
-      description: "Modern UI to-do list application with user authentication and data persistence.",
-      image: "belajar-pemrograman-web-dasar.webp",
-      technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
-      liveLink: "#",
-      githubLink: "#"
+      title: "UHO CS 2024 — Website Angkatan",
+      description: "Website Angkatan Ilmu Komputer 2024 Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Halu Oleo",
+      image: "uho-cs-2024.webp",
+      technologies: ["TypeScript", "Vite", "React", "Shadcn UI", "Tailwind CSS",],
+      liveLink: "https://ilkom24uho.vercel.app",
+      githubLink: "https://github.com/ridhocrnv/uho-cs-2024"
     }
   ];
 
