@@ -25,13 +25,14 @@ const Index = () => {
       }
     });
 
-    // Add AOS-like functionality with CSS animations and Intersection Observer
+    // Fixed animation implementation - contents should remain visible
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-up');
-            observer.unobserve(entry.target);
+            entry.target.classList.remove('opacity-0');
+            // Don't unobserve to handle repeated scrolling
           }
         });
       },

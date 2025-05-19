@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github, FileCode, FileType, Code, GitBranch, Figma } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const TabContent = ({ activeTab }: { activeTab: string }) => {
   if (activeTab === 'projects') {
@@ -196,7 +197,8 @@ const TabbedSection = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-up');
-            observer.unobserve(entry.target);
+            entry.target.classList.remove('opacity-0');
+            // Don't unobserve to allow re-animation when scrolling back
           }
         });
       },
