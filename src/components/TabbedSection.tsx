@@ -101,7 +101,7 @@ const CertificatesTab = () => {
       title: "Belajar Dasar Pemrograman Web",
       issuer: "Dicoding Indonesia",
       date: "November 2024",
-      image: "/belajar-pemrograman-web-dasar.webp",
+      image: "belajar-pemrograman-web-dasar.webp",
       link: "#"
     },
     {
@@ -165,12 +165,12 @@ const CertificatesTab = () => {
 
 const TechStackTab = () => {
   const technologies = [
-    { name: "HTML5", icon: FileCode, color: "#E44D26", level: 85 },
-    { name: "CSS3", icon: FileType, color: "#1572B6", level: 80 },
-    { name: "JavaScript", icon: Code, color: "#F7DF1E", level: 70 },
-    { name: "Git", icon: GitBranch, color: "#F05032", level: 75 },
-    { name: "GitHub", icon: Github, color: "#181717", level: 80 },
-    { name: "Figma", icon: Figma, color: "#F24E1E", level: 65 }
+    { name: "HTML5", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", color: "#E44D26", level: 85 },
+    { name: "CSS3", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", color: "#1572B6", level: 60 },
+    { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", color: "#F7DF1E", level: 50 },
+    { name: "Git", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", color: "#F05032", level: 55 },
+    { name: "GitHub", iconUrl: "github-white-icon.png", color: "#181717", level: 50 },
+    { name: "Figma", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", color: "#F24E1E", level: 80 }
   ];
 
   return (
@@ -180,7 +180,12 @@ const TechStackTab = () => {
           key={tech.name}
           className="glass-card p-6 flex flex-col items-center text-center transition-transform hover:scale-105"
         >
-          <tech.icon size={48} style={{ color: tech.color }} className="mb-4" />
+          <img
+            src={tech.iconUrl}
+            alt={tech.name}
+            className="mb-4"
+            style={{ width: 48, height: 48, objectFit: "contain" }}
+          />
           <h3 className="text-xl font-semibold mb-2">{tech.name}</h3>
           <div className="w-full bg-dark/50 rounded-full h-2.5 mb-2">
             <div 
@@ -188,12 +193,13 @@ const TechStackTab = () => {
               style={{ width: `${tech.level}%` }}
             ></div>
           </div>
-          <p className="text-sm text-gray-400">{tech.level}% Proficiency</p>
+          <p className="text-sm text-gray-400">{tech.level}% Kemampuan</p>
         </div>
       ))}
     </div>
   );
 };
+
 
 const TabbedSection = () => {
   const [activeTab, setActiveTab] = useState('projects');
@@ -229,28 +235,28 @@ const TabbedSection = () => {
     >
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center opacity-0 animate-on-scroll">
-          My <span className="text-gradient">Portfolio</span>
+          Portofolio <span className="text-gradient">Saya</span>
         </h2>
 
         <div className="glass-card p-1 md:p-2 rounded-lg mb-8 opacity-0 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
-          <div className="flex">
+          <div className="flex overflow-auto">
             <button
               className={`py-3 px-6 rounded-lg transition-all ${activeTab === 'projects' ? 'bg-dark-secondary text-gradient' : 'text-gray-400 hover:text-white'}`}
               onClick={() => setActiveTab('projects')}
             >
-              Projects
+              Proyek
             </button>
             <button
               className={`py-3 px-6 rounded-lg transition-all ${activeTab === 'certificates' ? 'bg-dark-secondary text-gradient' : 'text-gray-400 hover:text-white'}`}
               onClick={() => setActiveTab('certificates')}
             >
-              Certificates
+              Sertifikat
             </button>
             <button
               className={`py-3 px-6 rounded-lg transition-all ${activeTab === 'techstack' ? 'bg-dark-secondary text-gradient' : 'text-gray-400 hover:text-white'}`}
               onClick={() => setActiveTab('techstack')}
             >
-              Tech Stack
+              Tools & Framework
             </button>
           </div>
         </div>

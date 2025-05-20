@@ -65,7 +65,7 @@ const AboutSection = () => {
   },
   {
     name: "GitHub",
-    iconUrl: "https://img.icons8.com/ios-glyphs/100/FFFFFF/github.png",
+    iconUrl: "github-white-icon.png",
     color: "#181717",
   },
   {
@@ -93,7 +93,7 @@ const AboutSection = () => {
     >
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center opacity-0 animate-on-scroll">
-          About <span className="text-gradient">Me</span>
+          Tentang <span className="text-gradient">Saya</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -112,7 +112,7 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-1 gap-6">
             <div className="glass-card p-6 opacity-0 animate-on-scroll" style={{ animationDelay: '0.3s' }}>
-              <h3 className="text-xl font-semibold mb-4 text-gradient">Technical Skills</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gradient">Tools & Framework</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {skills.map((skill) => (
   <div

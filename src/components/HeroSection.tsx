@@ -113,7 +113,7 @@ const HeroSection = () => {
           className="btn-primary animate-fade-up"
           style={{ animationDelay: '0.8s' }}
         >
-          View My Projects
+          Lihat Proyek Saya
           <ArrowDown className="animate-bounce ml-1" size={18} />
         </button>
       </div>

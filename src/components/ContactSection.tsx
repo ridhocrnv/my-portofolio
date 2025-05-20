@@ -56,47 +56,47 @@ const ContactSection = () => {
     >
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center opacity-0 animate-on-scroll">
-          Get In <span className="text-gradient">Touch</span>
+          Hubungi <span className="text-gradient">Saya</span>
         </h2>
         <p className="text-center text-gray-400 mb-12 opacity-0 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
-          Have a question or want to work together? Let me know.
+          Punya pertanyaan atau ingin bekerja sama? Beri tahu saya.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="glass-card p-6 opacity-0 animate-on-scroll" style={{ animationDelay: '0.3s' }}>
-            <h3 className="text-xl font-semibold mb-4 text-gradient">Contact Information</h3>
+            <h3 className="text-xl font-semibold mb-4 text-gradient">Informasi Kontak</h3>
             <div className="flex flex-col space-y-4">
               <div>
                 <p className="text-white font-medium">Email</p>
                 <a href="mailto:info@ridho-portfolio.com" className="text-gray-400 hover:text-gradient">info@ridho-portfolio.com</a>
               </div>
               <div>
-                <p className="text-white font-medium">Location</p>
+                <p className="text-white font-medium">Lokasi</p>
                 <span className="text-gray-400">Kendari, Indonesia</span>
               </div>
               <div>
-                <p className="text-white font-medium">Social Media</p>
+                <p className="text-white font-medium">Media Sosial</p>
                 <div className="flex space-x-4 mt-2">
-                  <a href="#" className="text-gray-400 hover:text-gradient">GitHub</a>
+                  <a href="https://github.com/ridhocrnv" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gradient">GitHub</a>
                   <a href="#" className="text-gray-400 hover:text-gradient">LinkedIn</a>
-                  <a href="#" className="text-gray-400 hover:text-gradient">Instagram</a>
+                  <a href="https://instagram.com/ridhocrnv" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gradient">Instagram</a>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="glass-card p-6 opacity-0 animate-on-scroll" style={{ animationDelay: '0.4s' }}>
-            <h3 className="text-xl font-semibold mb-4 text-gradient">Send Message</h3>
+            <h3 className="text-xl font-semibold mb-4 text-gradient">Kirim Pesan</h3>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-300">Name</label>
+                <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-300">Nama</label>
                 <input 
                   type="text" 
                   id="name" 
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full bg-dark border border-gray-700 rounded-md px-4 py-2 text-white placeholder-gray-500 focus:border-gradient-start focus:outline-none"
-                  placeholder="Your name"
+                  placeholder="Nama Anda"
                   required
                 />
               </div>
@@ -113,14 +113,14 @@ const ContactSection = () => {
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-300">Message</label>
+                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-300">Pesan</label>
                 <textarea 
                   id="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)} 
                   rows={4}
                   className="w-full bg-dark border border-gray-700 rounded-md px-4 py-2 text-white placeholder-gray-500 focus:border-gradient-start focus:outline-none"
-                  placeholder="How can I help you?"
+                  placeholder="Bagaimana saya bisa membantu Anda?"
                   required
                 ></textarea>
               </div>

@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://github.com/ridho-irawan" 
+                href="https://github.com/ridhocrnv" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-dark-secondary flex items-center justify-center text-gray-400 hover:text-gradient-start transition-colors"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Linkedin size={18} />
               </a>
               <a 
-                href="mailto:ridho.irawan@example.com" 
+                href="mailto:ridhoahmadirawan281@gmail.com" 
                 className="w-9 h-9 rounded-full bg-dark-secondary flex items-center justify-center text-gray-400 hover:text-gradient-start transition-colors"
               >
                 <Mail size={18} />
@@ -46,31 +46,31 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Tautan Cepat</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-gradient-start transition-colors">Home</a>
+                <a href="#home" className="text-gray-400 hover:text-gradient-start transition-colors">Beranda</a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-gradient-start transition-colors">About</a>
+                <a href="#about" className="text-gray-400 hover:text-gradient-start transition-colors">Tentang</a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-400 hover:text-gradient-start transition-colors">Projects</a>
+                <a href="#projects" className="text-gray-400 hover:text-gradient-start transition-colors">Proyek</a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-gradient-start transition-colors">Contact</a>
+                <a href="#contact" className="text-gray-400 hover:text-gradient-start transition-colors">Kontak</a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-4">Info Kontak</h3>
             <ul className="space-y-2">
               <li className="text-gray-400">
-                <span className="text-gradient-start">Email:</span> ridho.irawan@example.com
+                <span className="text-gradient-start">Email:</span> ridhoahmadirawan281@gmail.com
               </li>
               <li className="text-gray-400">
-                <span className="text-gradient-start">Location:</span> Halu Oleo University, Indonesia
+                <span className="text-gradient-start">Lokasi:</span> Kendari, Indonesia
               </li>
               <li>
                 <a 

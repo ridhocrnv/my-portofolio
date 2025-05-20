@@ -53,10 +53,10 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
-          <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
-          <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
-          <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
+          <button onClick={() => scrollToSection('home')} className="nav-link">Beranda</button>
+          <button onClick={() => scrollToSection('about')} className="nav-link">Tentang</button>
+          <button onClick={() => scrollToSection('projects')} className="nav-link">Proyek</button>
+          <button onClick={() => scrollToSection('contact')} className="nav-link">Kontak</button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -72,10 +72,10 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur-lg py-5 border-t border-white/10 animate-fade-in">
           <div className="container-custom flex flex-col gap-4">
-            <button onClick={() => scrollToSection('home')} className="nav-link py-2 text-left">Home</button>
-            <button onClick={() => scrollToSection('about')} className="nav-link py-2 text-left">About</button>
-            <button onClick={() => scrollToSection('projects')} className="nav-link py-2 text-left">Projects</button>
-            <button onClick={() => scrollToSection('contact')} className="nav-link py-2 text-left">Contact</button>
+            <button onClick={() => scrollToSection('home')} className="nav-link py-2 text-left">Beranda</button>
+            <button onClick={() => scrollToSection('about')} className="nav-link py-2 text-left">Tentang</button>
+            <button onClick={() => scrollToSection('projects')} className="nav-link py-2 text-left">Proyek</button>
+            <button onClick={() => scrollToSection('contact')} className="nav-link py-2 text-left">Kontak</button>
           </div>
         </div>
       )}
