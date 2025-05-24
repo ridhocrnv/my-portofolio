@@ -68,7 +68,7 @@ const ContactSection = () => {
             <div className="flex flex-col space-y-4">
               <div>
                 <p className="text-white font-medium">Email</p>
-                <a href="mailto:info@ridho-portfolio.com" className="text-gray-400 hover:text-gradient">info@ridho-portfolio.com</a>
+                <a href="mailto:info@ridho-portfolio.com" className="text-gray-400 hover:text-gradient">ridhoahmadirawan281@gmail.com</a>
               </div>
               <div>
                 <p className="text-white font-medium">Lokasi</p>
@@ -108,7 +108,7 @@ const ContactSection = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)} 
                   className="w-full bg-dark border border-gray-700 rounded-md px-4 py-2 text-white placeholder-gray-500 focus:border-gradient-start focus:outline-none"
-                  placeholder="your.email@example.com"
+                  placeholder="email.anda@contoh.com"
                   required
                 />
               </div>

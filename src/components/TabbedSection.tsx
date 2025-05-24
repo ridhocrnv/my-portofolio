@@ -16,7 +16,7 @@ const TabContent = ({ activeTab }: { activeTab: string }) => {
 const ProjectsTab = () => {
   const projects = [
     {
-      id: 1,
+      id: 999,
       title: "UHO CS 2024 — Website Angkatan",
       description: "Website Angkatan Ilmu Komputer 2024 Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Halu Oleo",
       image: "uho-cs-2024.webp",
@@ -25,7 +25,7 @@ const ProjectsTab = () => {
       githubLink: "https://github.com/ridhocrnv/uho-cs-2024"
     },
     {
-      id: 2,
+      id: 998,
       title: "Website Portofolio",
       description: "Website portofolio pribadi yang menampilkan profil, keahlian, dan proyek saya sebagai Frontend Developer.",
       image: "my-portofolio.webp",
@@ -34,13 +34,13 @@ const ProjectsTab = () => {
       githubLink: "https://github.com/ridhocrnv/my-portofolio"
     },
     {
-      id: 3,
-      title: "UHO CS 2024 — Website Angkatan",
-      description: "Website Angkatan Ilmu Komputer 2024 Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Halu Oleo",
-      image: "uho-cs-2024.webp",
-      technologies: ["TypeScript", "Vite", "React", "Shadcn UI", "Tailwind CSS",],
+      id: 997,
+      title: "Meleura — Eksplorasi Wisata Kabupaten Muna",
+      description: "Meleura adalah website eksplorasi destinasi wisata yang menampilkan keindahan alam dan budaya Kabupaten Muna.",
+      image: "website-meleura.webp",
+      technologies: ["HTML", "CSS", "JavaScript"],
       liveLink: "https://ilkom24uho.vercel.app",
-      githubLink: "https://github.com/ridhocrnv/uho-cs-2024"
+      githubLink: ""
     }
   ];
 
