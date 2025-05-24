@@ -39,7 +39,7 @@ const ProjectsTab = () => {
       description: "Meleura adalah website eksplorasi destinasi wisata yang menampilkan keindahan alam dan budaya Kabupaten Muna.",
       image: "website-meleura.webp",
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://ilkom24uho.vercel.app",
+      liveLink: "https://mern-stack-mauve.vercel.app/",
       githubLink: ""
     }
   ];
